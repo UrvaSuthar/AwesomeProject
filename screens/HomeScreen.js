@@ -1,4 +1,4 @@
-import { View, Text, Button, Image, SafeAreaView, TextInput } from 'react-native'
+import { View, Text, Button, Image, SafeAreaView, TextInput, ScrollView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import img from '../assets/icons8-food-delivery-64.png'
@@ -6,11 +6,11 @@ import {
   ChevronDownIcon,
   UserIcon,
   MagnifyingGlassCircleIcon,
+  AdjustmentsHorizontalIcon
 
 } from "react-native-heroicons/outline";
-import { ScrollView } from 'react-native';
-import About from './About';
-import { SearchBar } from 'react-native-screens';
+import Categories from './coponents/Categories';
+
 
 
 const HomeScreen = () => {
@@ -47,13 +47,25 @@ const HomeScreen = () => {
       </View>
 
       {/* SearchBar */}
-      <View>
-        <View className='flex-row bg-gray-300 mx-4 mt-3 p-3 space-x-2 rounded-xl items-center'>
+      <View className='flex-row mx-4 pb-3 items-center space-x-3'>
+        <View className='flex-row flex-1 p-3 bg-gray-300 space-x-2 rounded-xl'>
           <MagnifyingGlassCircleIcon color='gray' />
-          <TextInput placeholder='Enter Dish Name' />
+          <TextInput placeholder='Enter Dish Name' keyboardType='default' />
         </View>
+        <AdjustmentsHorizontalIcon />
       </View>
 
+
+      {/* Body */}
+      <ScrollView className='bg-gray-100'
+      contentContainerStyle={{
+        paddingBottom:100,
+      }}
+      >
+
+        {/* Categories */}
+        <Categories/>
+      </ScrollView>
     </SafeAreaView>
   )
 }
