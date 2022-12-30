@@ -10,6 +10,7 @@ import {
 
 } from "react-native-heroicons/outline";
 import Categories from './coponents/Categories';
+import FeaturedRow from './coponents/FeaturedRow';
 
 
 
@@ -31,7 +32,7 @@ const HomeScreen = () => {
       >
         <Image
           source={img}
-          className='h-10 w-10 bg-gray-300 p-4 rounded-full'
+          className='h-10 w-10 bg-red-400 p-4 rounded-full'
         />
 
         <View className='flex-1'>
@@ -40,7 +41,7 @@ const HomeScreen = () => {
           </Text>
           <Text className='text-bold text-xl'>
             Current Location
-            <ChevronDownIcon size={20} />
+            <ChevronDownIcon size={20} color='#DC0000' />
           </Text>
         </View>
         <UserIcon size={35} color='#DC0000' />
@@ -52,7 +53,7 @@ const HomeScreen = () => {
           <MagnifyingGlassCircleIcon color='gray' />
           <TextInput placeholder='Enter Dish Name' keyboardType='default' />
         </View>
-        <AdjustmentsHorizontalIcon />
+        <AdjustmentsHorizontalIcon color='#DC0000' />
       </View>
 
 
@@ -65,6 +66,23 @@ const HomeScreen = () => {
 
         {/* Categories */}
         <Categories/>
+
+        {/* FeaturedRow */}
+        <FeaturedRow
+        id='1'
+        title='Deals For You'
+        description='Deals!! Specialy Made For You!!'
+        />
+        <FeaturedRow
+        id='1'
+        title='Deals For You'
+        description='Deals!! Specialy Made For You!!'
+        />
+        <FeaturedRow
+        id='1'
+        title='Deals For You'
+        description='Deals!! Specialy Made For You!!'
+        />
       </ScrollView>
     </SafeAreaView>
   )
