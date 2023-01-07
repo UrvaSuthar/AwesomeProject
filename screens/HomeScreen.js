@@ -74,13 +74,13 @@ const HomeScreen = () => {
         description='Deals!! Specialy Made For You!!'
         />
         <FeaturedRow
-        id='1'
-        title='Deals For You'
+        id='2'
+        title='Your Favrite Ones'
         description='Deals!! Specialy Made For You!!'
         />
         <FeaturedRow
-        id='1'
-        title='Deals For You'
+        id='3'
+        title='Check out! New Reastuarnts'
         description='Deals!! Specialy Made For You!!'
         />
       </ScrollView>
