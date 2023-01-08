@@ -23,16 +23,16 @@ const FeaturedRow = ({ id, title, description }) => {
       >
         {/* Restaurant Cards */}
         <RestaurantCard
-        id=''
-        imgUrl=''
-        title=''
-        rating=''
-        gener=''
-        address=''
-        short_description=''
-        dishes=''
-        long=''
-        lat=''/>
+        id='1'
+        imgUrl='https://img.freepik.com/free-vector/hand-drawn-delicious-indian-cuisine_23-2149336169.jpg?w=1800&t=st=1671703475~exp=1671704075~hmac=3cf1e32160c27bcf8af7822468b52a969afeb2916f4b80b71423b267f78005ae'
+        title='Test Name'
+        rating='4'
+        gener='Indian'
+        address='Modhera Road'
+        short_description='All dishes'
+        dishes='Dal Bati'
+        long='20'
+        lat='30'/>
       </ScrollView>
     </View>
   );
