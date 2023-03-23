@@ -48,8 +48,8 @@ const HomeScreen = () => {
       </View>
 
       {/* SearchBar */}
-      <View className='flex-row mx-4 pb-3 items-center space-x-3'>
-        <View className='flex-row flex-1 p-3 bg-gray-300 space-x-2 rounded-xl'>
+      <View className='flex-row mx-4 pb-3 items-center space-x-3 '>
+        <View className='flex-row flex-1 p-3 bg-gray-200 space-x-2 rounded-xl'>
           <MagnifyingGlassCircleIcon color='gray' />
           <TextInput placeholder='Enter Dish Name' keyboardType='default' />
         </View>
